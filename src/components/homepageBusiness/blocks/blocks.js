@@ -72,8 +72,7 @@ class Blocks extends React.Component{
 
                                                 </div>
                                             </a>
-                                            <a
-                                                id={'block3'}
+                                            <a id={'block3'}
                                                 onMouseEnter={this.toggleHover}
                                                 className="ef-box bg-red-black align-content-center d-flex align-items-center"
                                                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal"
