@@ -1,0 +1,168 @@
+#hp-team {
+  background: url('../../../img/football-team.png') -400px top no-repeat, url('../../../img/football-team.png') right top no-repeat;
+  background-size: auto 100%, auto 100%;
+  background-color: #000;
+  .hp-team {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    h2{
+      color: #fff;
+    }
+    span {
+      display: block;
+    }
+    a {
+      color: #fff;
+    }
+    .hp-header-x {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+      z-index: 10;
+    }
+    .hp-title {
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      i {
+        &::before {
+          border-left: 1px solid #fff;
+          padding: 4px 0 4px 10px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .hp-office {
+      font-family: Muli, sans-serif;
+      font-style: italic;
+      font-size: 12px;
+    }
+    .hp-border {
+      transition: 0.5s;
+      color: #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%);
+      .hp-content {
+        transform: scale(0);
+        transition: 0.5s;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        padding: 10px;
+        margin: 10px;
+        span {
+          display: block;
+        }
+      }
+      .hp-description {
+        font-family: Muli,sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        display: none;
+        margin-top: 10px;
+        overflow: hidden;
+        display: block;
+      }
+    }
+    &.x-active, &:hover {
+      .hp-header-x {
+        opacity: 0;
+      }
+      .hp-border {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .hp-content {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+  .hp-more {
+    text-align: center;
+    font-weight: 600;
+    font-size: 21px;
+    color: #fff;
+  }
+  .hp-stadiuum {
+    background: #AB001F;
+  }
+}
+
+@media (max-width: 768px){
+  #hp-team {
+    .hp-stadiuum {
+      padding: 20px 0;
+      img {
+        max-width: 50%
+      }
+    }
+    .hp-more {
+      font-size: 14px;
+    }
+    .hp-team {
+      .hp-title {
+        font-size: 12px;
+      }
+      .hp-office {
+        font-size: 11px;
+      }
+      .hp-border {
+        .hp-content {
+          padding: 5px;
+          margin: 5px;
+          width: calc(100% - 10px);
+          height: calc(100% - 10px);
+          max-height: 160px;
+          overflow: scroll;
+          .hp-description {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:1418px) {
+  #hp-team {
+    background: url('../../../img/football-team.png') -140px top no-repeat, url('../../../img/football-team.png') right top no-repeat;
+    background-size: auto 100%, auto 100%;
+    background-color: #000;
+  }
+}
+
+@media (min-width:1555px) {
+  #hp-team {
+    background: url('../../../img/football-team.png');
+    background-size: 41%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+}
+
+@media (max-width:320px) {
+  #hp-team .hp-team .hp-title {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px){
+  .col-md-2{
+    flex: 0 0 19.99%;
+    max-width: 19.99%;
+  }
+}

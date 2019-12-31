@@ -1,0 +1,42 @@
+// About
+.ef-about {
+  .img-team{
+    background-image: url('../../../img/jump.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .ef-container {
+    padding: 80px 45px;
+    .ef-content {
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media(max-width: 992px){
+  .ef-about {
+    background-image: none;
+    background-color: #fff;
+  }
+}
+@media(max-width: 992px){
+  .ef-about .ef-container {
+    padding: 100px 20px 50px;
+  }
+  .ef-about {
+    .ef-container {
+      .ef-content {
+        p {
+          font-size: 14px;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

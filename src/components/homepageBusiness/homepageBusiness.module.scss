@@ -1,0 +1,55 @@
+.poster{
+  background-image: url("../../img/football.png");
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.ef-hero {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .ef-container {
+    padding-bottom: 40px;
+    span{
+      color: #AB001F;
+    }
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 72px;
+    }
+    .ef-content {
+      // margin:  24px 15%;
+      margin:  24px 1em;
+      p {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ef-hero {
+    .ef-container {
+      h1 {
+        font-size: 7vw;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #ef-page-sports-partners .ef-hero {
+    padding-top: 80px;
+  }
+  #ef-page-media-partners .ef-hero {
+    padding-top: 80px;
+  }
+}

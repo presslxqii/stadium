@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c86431a.chunk.css",
+    "main.js": "/static/js/main.be88929b.chunk.js",
+    "main.js.map": "/static/js/main.be88929b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b566536d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b566536d.js.map",
+    "static/css/2.4d705d1a.chunk.css": "/static/css/2.4d705d1a.chunk.css",
+    "static/js/2.f763b0ca.chunk.js": "/static/js/2.f763b0ca.chunk.js",
+    "static/js/2.f763b0ca.chunk.js.map": "/static/js/2.f763b0ca.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f2388f6bad363d4214c80c8fe90d135a.js": "/precache-manifest.f2388f6bad363d4214c80c8fe90d135a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4d705d1a.chunk.css.map": "/static/css/2.4d705d1a.chunk.css.map",
+    "static/css/main.0c86431a.chunk.css.map": "/static/css/main.0c86431a.chunk.css.map",
+    "static/js/2.f763b0ca.chunk.js.LICENSE": "/static/js/2.f763b0ca.chunk.js.LICENSE",
+    "static/media/footer.scss": "/static/media/bg-footer.ced76b76.png",
+    "static/media/homepage.module.scss": "/static/media/fan-color.a6c87802.png",
+    "static/media/homepageBusiness.module.scss": "/static/media/football.efdcfe56.png",
+    "static/media/index.css": "/static/media/muli-latin-900italic.f99056b6.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b566536d.js",
+    "static/css/2.4d705d1a.chunk.css",
+    "static/js/2.f763b0ca.chunk.js",
+    "static/css/main.0c86431a.chunk.css",
+    "static/js/main.be88929b.chunk.js"
+  ]
+}

@@ -1,0 +1,42 @@
+@mixin button($width, $height, $size){
+  width: $width;
+  height: $height;
+  color: #FFFFFF;
+  line-height: $height;
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Montserrat, sans-serif;
+  border: 1px solid #FFFFFF;
+  font-size: $size;
+  background: none;
+
+  &:hover{
+    background: #AB001F;
+  }
+
+  &:active{
+    background: #5E0011;
+  }
+
+  &:disabled{
+    border-color: #C3BFC9;
+  }
+}
+
+.button_small{
+  @include button(190px, 46px, 16px);
+}
+
+.button_medium{
+  @include button(220px, 70px, 20px);
+}
+
+.button_big{
+  @include button(260px, 100px, 24px);
+}
+
+.button_large{
+  @include button(374px, 144px, 32px);
+  border: 2px solid #FFFFFF;
+}

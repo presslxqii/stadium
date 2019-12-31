@@ -1,0 +1,39 @@
+@mixin side($color, $bw){
+  background-image: url($color);
+  width: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  &:hover{
+    background-image: url($bw);
+  }
+}
+
+.row{
+  display: flex;
+  height: 100vh;
+}
+
+.fan{
+  @include side("../../img/fan-color.png", "../../img/fan-bw.png")
+}
+
+.business{
+  @include side("../../img/business-color.png", "../../img/business-bw.png")
+}
+
+.button{
+  pointer-events: auto;
+  position: absolute;
+  top: 60%;
+}
+
+.title{
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 30%;
+}

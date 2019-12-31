@@ -1,0 +1,97 @@
+.ef-box-group {
+  height: 540px;
+  h2 {
+    color: #fff;
+    font-size: 24px;
+  }
+  .ef-box{
+    height: 50%;
+    &:hover{
+      height: 100%;
+    }
+    .selectedBlock{
+      color: white;
+    }
+  }
+}
+
+
+#ef-page-sports-partners, #ef-page-media-partners {
+  .ef-box {
+    text-align: left;
+    color: #fff;
+    position: relative;
+    padding: 40px 40px 40px 60px;
+    p {
+      font-size: 14px;
+    }
+    img {
+      width: 48px;
+      margin-bottom: 10px;
+    }
+    .ef-rotate {
+      position: absolute;
+      left: -10px;
+      transform: rotate(-90deg);
+      color: #FF0001;
+      top: 135px;
+    }
+  }
+}
+#ef-page-media-partners {
+  .ef-box {
+    .ef-title {
+      height: auto;
+    }
+  }
+}
+
+
+
+.box-football{
+  background-image: url("../../../img/football-block.png");
+  height: 1080px;
+  background-size: cover;
+}
+
+.box-esport{
+  background-image: url("../../../img/esport-block.png");
+  background-size: cover;
+}
+
+.box-basketball{
+  background-image: url("../../../img/basketball-block.png");
+  background-size: cover;
+}
+
+#ef-page-my-stadiuum {
+  .ef-box {
+    text-align: center;
+    h2 {
+      margin-bottom: 0;
+    }
+    img {
+      width: 96px;
+      margin: 20px auto;
+    }
+    p {
+      //color: $c-red;
+    }
+    &.bg-red-dark-light {
+      p {
+        //color: $c-red-black;
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  #ef-page-sports-partners, #ef-page-media-partners, #ef-page-my-stadiuum {
+    .ef-box-group {
+      float: right;
+      width: 300px;
+      .ef-box {
+        float: none;
+      }
+    }
+  }
+}

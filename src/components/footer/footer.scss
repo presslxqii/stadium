@@ -1,0 +1,76 @@
+#hp-footer {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0;
+      padding: 0;
+      a {
+
+      }
+    }
+  }
+  a { transition: 0.5s; }
+  a:hover { transform: scale(1.1); }
+}
+#hp-footer p,
+#hp-footer a,
+#hp-footer div {
+  color: #fff;
+  font-size: 14px;
+}
+
+#hp-footer {background: url('../../img/bg-footer.png') bottom center; background-size: cover; background-repeat: no-repeat;min-height: 800px;padding-top: 300px;}
+
+#hp-footer .hp-logo {display: table;margin: 30px 0 60px;}
+#hp-footer .ef-links {line-height: 2;margin: 20px 0px 20px 15px;}
+#hp-footer .ef-links a {font-size: 14px;}
+
+#hp-social {padding-bottom: 10px;display: table; margin: 0 auto;}
+#hp-social a {font-size: 24px;display: block;line-height: 1;margin: 10px 0;text-align: center;padding: 10px;}
+#hp-social a i {}
+
+#hp-offices {}
+#hp-offices .hp-office {padding: 0 0 30px 30px;}
+#hp-offices .hp-office .hp-title {font-weight: 600;font-size: 12px;margin-bottom: 5px;}
+#hp-offices .hp-office .hp-description {font-style: italic;font-size: 12px;}
+#hp-offices .hp-office .hp-description .hp-address {font-style: italic;}
+#hp-offices .hp-office .hp-description .hp-country {font-weight: 600;text-transform: uppercase;}
+
+// Copyright
+#hp-copyright {height: 90px;}
+#hp-copyright p, #hp-copyright a {font-size: 14px;}
+
+@media (max-width: 767px){
+  #hp-footer {
+    background-image: url('../../img/bg-footer.png');
+    background-size: 125% auto;
+    background-position: bottom center;
+    padding-top: 0px;
+    .ef-links {padding: 30px 20px;}
+    .border-right {
+      border-right: 0;
+    }
+  }
+  #hp-social {
+    a {
+      display: inline-block;
+      margin: 3px;
+    }
+  }
+  #hp-offices {
+    //background-color: $c-red-dark;
+    padding: 40px 60px 10px;
+  }
+  #hp-copyright {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #hp-social a {
+    margin: 0;
+  }
+}
