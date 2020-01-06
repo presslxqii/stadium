@@ -4,14 +4,12 @@
     color: #fff;
     font-size: 24px;
   }
+
+  .selectedBlock{
+    height: 100%;
+  }
   .ef-box{
     height: 50%;
-    &:hover{
-      height: 100%;
-    }
-    .selectedBlock{
-      color: white;
-    }
   }
 }
 

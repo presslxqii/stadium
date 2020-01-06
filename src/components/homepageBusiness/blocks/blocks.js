@@ -8,15 +8,13 @@ class Blocks extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            isActive: 'block1'
+            selectedBlock: 'block1'
         }
     }
-
     toggleHover = (e) => {
+        this.setState({selectedBlock: e.target.id})
     };
-
     render() {
-
         return (
             <div className="ef-blocks fadeIn animated"
                  data-anijs="if: scroll, on: window, do: fadeIn animated, before: $scrollReveal">
@@ -31,7 +29,7 @@ class Blocks extends React.Component{
                                             <div
                                                 id={'block1'}
                                                 onMouseEnter={this.toggleHover}
-                                                className="ef-box bg-red-black"
+                                                className={`bg-red-black ${this.state.selectedBlock === 'block1' ? 'selectedBlock' : 'ef-box'}`}
                                                 data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
                                                 <div>
                                                     <div className="ef-img">
@@ -52,7 +50,8 @@ class Blocks extends React.Component{
                                             <a
                                                id={'block2'}
                                                onMouseEnter={this.toggleHover}
-                                               className="ef-box bg-red-dark align-content-center d-flex align-items-center fadeInUp animated"
+                                               className={`bg-red-dark align-content-center d-flex align-items-center 
+                                               fadeInUp animated ${this.state.selectedBlock === 'block2' ? 'selectedBlock' : 'ef-box'}`}
                                                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal"
                                                href="https://stadiuum.com/sports-partners">
                                                 <div>
@@ -74,7 +73,8 @@ class Blocks extends React.Component{
                                             </a>
                                             <a id={'block3'}
                                                 onMouseEnter={this.toggleHover}
-                                                className="ef-box bg-red-black align-content-center d-flex align-items-center"
+                                               className={`bg-red-dark align-content-center d-flex align-items-center 
+                                               fadeInUp animated ${this.state.selectedBlock === 'block3' ? 'selectedBlock' : 'ef-box'}`}
                                                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal"
                                                href="https://stadiuum.com/media-partners">
                                                 <div>
