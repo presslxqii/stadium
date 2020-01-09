@@ -33,73 +33,72 @@ class Blocks extends React.Component{
                                                 id={'block1'}
                                                 onMouseEnter={this.toggleHover}
                                                 onMouseLeave={this.toggleLeave}
-                                                className={`bg-red-dark ${this.state.selectedBlock === 'block1' ? 'selectedBlock' : 'ef-box'}`}
+                                                className={`d-flex justify-content-center align-items-center bg-red-dark
+                                                ${this.state.selectedBlock === 'block1' ? 'selectedBlock' : 'ef-box'}`}
                                                 data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
-                                                <div>
-                                                    <div className="ef-img">
-                                                        <img
-                                                            src="https://stadiuum.com/wp-content/themes/XStadium/template/img/icons/icon-briefcase.png"
-                                                            alt="" className="img-fluid"/>
+                                                <div className={'row w-75'}>
+                                                    <div className="ef-img col-3">
+                                                        <div className={'bug'}/>
                                                     </div>
-                                                    <div className="ef-title">
+                                                    <div className="ef-title col-9">
                                                         <h2>Sports Business</h2>
+                                                        <p>
+                                                            The holy grail for sports business <br/>
+                                                            is here. Find out about our <br/>
+                                                            partnership options.
+                                                        </p>
                                                     </div>
-                                                    <p>
-                                                        The holy grail for sports business <br/>
-                                                        is here. Find out about our <br/>
-                                                        partnership options.
-                                                    </p>
                                                 </div>
                                             </div>
                                             <a
-                                               id={'block2'}
-                                               onMouseEnter={this.toggleHover}
-                                               onMouseLeave={this.toggleLeave}
-                                               className={`bg-red-dark align-content-center
+                                                id={'block2'}
+                                                onMouseEnter={this.toggleHover}
+                                                onMouseLeave={this.toggleLeave}
+                                                className={`${this.state.selectedBlock === 'block3' ? 'bg-red-black' : 'bg-red-dark'}
+                                                bg-red-dark d-flex justify-content-center
+                                                align-items-center
                                                fadeInUp animated ${this.state.selectedBlock === 'block2' ? 'selectedBlock' : 'ef-box'}`}
-                                               data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal"
-                                               href="https://stadiuum.com/sports-partners">
-                                                <div>
-
-                                                    <div className="ef-img">
-                                                        <img
-                                                            src="https://stadiuum.com/wp-content/themes/XStadium/template/img/icons/icon-trophy.png"
-                                                            alt="" className="img-fluid"/>
+                                                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal"
+                                                href="https://stadiuum.com/sports-partners">
+                                                <div className={'row w-75'}>
+                                                    <div className="ef-img col-3">
+                                                        <div className={'cup'}/>
                                                     </div>
-                                                    <div className="ef-title">
+                                                    <div className="ef-title col-9">
                                                         <h2>Sports</h2>
+                                                        <p>
+                                                            Teams, Clubs, Organisations <span
+                                                            className="efi ef-16 ef-icon-arrow"/>
+                                                        </p>
                                                     </div>
-                                                    <p>
-                                                        Teams, Clubs, Organisations <span
-                                                        className="efi ef-16 ef-icon-arrow"/>
-                                                    </p>
-
                                                 </div>
                                             </a>
                                             <a id={'block3'}
-                                                onMouseEnter={this.toggleHover}
+                                               onMouseEnter={this.toggleHover}
                                                onMouseLeave={this.toggleLeave}
-                                               className={`bg-red-black align-content-center d-flex align-items-center
+                                               className={`bg-red-black
+                                               align-items-center
+                                               justify-content-center d-flex align-items-center
                                                fadeInUp animated ${this.state.selectedBlock === 'block3' ? 'selectedBlock' : 'ef-box'}`}
                                                data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal"
                                                href="https://stadiuum.com/media-partners">
-                                                <div>
-                                                    <div className="ef-img">
+                                                <div className={'row w-75'}>
+                                                    <div className="ef-img col-3">
                                                         <img
                                                             src="https://stadiuum.com/wp-content/themes/XStadium/template/img/icons/icon-media.png"
                                                             alt="" className="img-fluid"/>
                                                     </div>
-                                                    <div className="ef-title">
+                                                    <div className="ef-title col-9">
                                                         <h2>Media</h2>
+                                                        <p>
+                                                            Journalists, Publishers, Businesses <span
+                                                            className="efi ef-16 ef-icon-arrow"/>
+                                                        </p>
                                                     </div>
-                                                    <p>
-                                                        Journalists, Publishers, Businesses <span
-                                                        className="efi ef-16 ef-icon-arrow"/>
-                                                    </p>
                                                 </div>
                                             </a>
                                         </div>
-
+                                        
                                         <div className="d-md-none d-block">
                                             <img
                                                 src="https://stadiuum.com/wp-content/themes/XStadium/template/img/bg/bg-home-gamer.jpg"

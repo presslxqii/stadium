@@ -1,6 +1,5 @@
 .ef-box-group {
   height: 540px;
-
   h2 {
     color: #fff;
     font-size: 24px;
@@ -9,39 +8,69 @@
   .selectedBlock {
     height: 100%;
     background-color: #AB001F;
+    h2{
+      font-size: 55px;
+    }
+  }
+
+  #block1{
+    color: #0b2e13;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .bug{
+      background-image: url("../../../icons-png/BugDarkRed.png");
+      width: 45px;
+      height: 41px;
+    }
+    &:hover{
+      .bug{
+        background-image: url("../../../icons-png/BugRed.png");
+        width: 39px;
+        height: 40px;
+      }
+    }
+  }
+
+  #block2{
+    color: #0b2e13;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .cup{
+      background-image: url("../../../icons-png/CupRed.png");
+      width: 32px;
+      height: 32px;
+    }
+    &:hover{
+      .cup{
+        background-image: url("../../../icons-png/CupWhite.png");
+        width: 39px;
+        height: 40px;
+      }
+    }
   }
 
   .ef-box {
     height: 50%;
     display: flex;
-    justify-content: center;
   }
 
-}
-
-
-#ef-page-sports-partners, #ef-page-media-partners {
-  .ef-box {
-    text-align: left;
-    color: #fff;
-    position: relative;
-    padding: 40px 40px 40px 60px;
-    p {
-      font-size: 14px;
-    }
-    img {
-      width: 48px;
-      margin-bottom: 10px;
-    }
-    .ef-rotate {
-      position: absolute;
-      left: -10px;
-      transform: rotate(-90deg);
-      color: #FF0001;
-      top: 135px;
+  a {
+    color:#FFFFFF;
+    font-size: 16px;
+    &:hover{
+      color:#FFFFFF;
+      text-decoration: none;
+      font-size: 16px;
     }
   }
+  p {
+    color:#FFFFFF;
+    font-size: 16px;
+  }
 }
+
 #ef-page-media-partners {
   .ef-box {
     .ef-title {
